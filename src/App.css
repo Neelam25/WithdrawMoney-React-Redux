@@ -1,32 +1,48 @@
 .App {
+  min-height: 100%;
   text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 1),
+    rgba(255, 0, 0, 0) 50%,
+    rgba(255, 0, 0, 1) 100%
+  );
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.App_userImg {
+  width: 100px;
+  height: 100px;
+  align-self: center;
+  margin-top: 10px;
+  border-radius: 50%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App__username {
+  color: #fff;
+  font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
+.App_Amount {
+  align-self: center;
+  background: #fff;
+  position: relative;
+  font-size: 2.1rem;
+  font-weight: bold;
+  padding: 2.5rem 5rem 1.5rem;
+  border-radius: 11px;
+  margin: 1rem 0 5rem 0;
+  box-shadow: 0 10px 5px 5px rgba(0, 0, 0, 0.02);
+  color: rgba(0, 0, 0, 0.47);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App__buttons > button {
+  outline: none;
+  background: #fe718f;
+  color: #fff;
+  box-shadow: none;
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+.App__amount--info {
+  font-size: 0.6rem;
 }
